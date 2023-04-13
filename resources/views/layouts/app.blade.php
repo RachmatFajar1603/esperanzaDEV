@@ -15,7 +15,7 @@
     <body>
         <div x-data="{ sidebarOpen: false }" class="flex h-screen bg-slate-200 font-roboto">
             @include('layouts.navigation')
-
+ 
             <div class="flex overflow-hidden flex-col flex-1">
                 @include('layouts.header')
 
