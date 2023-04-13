@@ -11,7 +11,7 @@
 
         <!-- Email Address -->
         <div>
-            <x-input-label for="email" :value="__('Email')"/>
+            <x-input-label for="email" :value="__('email')"/>
             <x-text-input type="email"
                      name="email"
                      id="email"
