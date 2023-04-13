@@ -1,0 +1,1 @@
+<img src="logo_infor.jpg" alt="logo" class="w-1/3 rounded-full">
