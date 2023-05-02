@@ -7,10 +7,14 @@
 
         <title>{{ config('app.name', 'Book Me') }}</title>
 
+        {{-- flowbite --}}
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+        
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        
     </head>
     <body>
         <div x-data="{ sidebarOpen: false }" class="flex h-screen font-roboto" >
@@ -32,5 +36,6 @@
                 </main>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     </body>
 </html>
