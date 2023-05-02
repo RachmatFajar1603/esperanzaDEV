@@ -24,7 +24,7 @@
 
         <!-- Password -->
         <div class="mt-3">
-            <x-input-label for="password" :value="__('Password')"/>
+            <x-input-label for="password" :value="__('Passwordd')"/>
             <x-text-input type="password"
                      name="password"
                      id="password"
