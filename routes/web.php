@@ -3,6 +3,7 @@
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,12 +20,18 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/redirects', [HomeController::class, 'index']);
+
 Route::get('/login', function () {
     return view('auth.login');
 });
 
 Route::get('/register', function () {
     return view('auth.register');
+});
+
+Route::get('/confirmbooking', function () {
+    return view('users.confirmbooking');
 });
 
 Route::get('/dashboard', function () {

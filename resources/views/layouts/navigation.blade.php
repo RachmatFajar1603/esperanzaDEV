@@ -9,6 +9,8 @@
         </div>
     </div>
 
+    @auth
+    @if(auth()->user()->role == '2')
     <nav class="mt-10" x-data="{ isMultiLevelMenuOpen: false }">
         <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
             <x-slot name="icon">
@@ -53,4 +55,6 @@
             </ul>
         </template>
     </nav>
+    @endif
+    @endauth
 </div>
