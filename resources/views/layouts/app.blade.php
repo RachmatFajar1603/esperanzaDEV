@@ -23,6 +23,8 @@
             <div class="flex overflow-hidden flex-col flex-1">
                 @include('layouts.header')
 
+                @auth
+                @if(auth()->user()->role == '2')
                 <main class="overflow-y-auto overflow-x-hidden flex-1 bg-cover bg-center" style="background-image: url(bg_login.jpg)">
                     <div class="container px-6 py-8 mx-auto">
                         @if (isset($header))
@@ -34,6 +36,15 @@
                         {{ $slot }}
                     </div>
                 </main>
+
+                @else 
+                <main class="overflow-y-auto overflow-x-hidden flex-1 bg-cover bg-center bg-white">
+
+                        {{ $slot }}
+
+                </main>
+                @endif
+                @endauth
             </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
