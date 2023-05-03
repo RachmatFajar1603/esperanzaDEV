@@ -1,4 +1,4 @@
-<div x-data="{ dropdownOpen: false }" class="relative bg-[#F0CF1F] rounded-md">
+<div x-data="{ dropdownOpen: false }" class="flex pr-2 pl-2 pt-1 pb-1 bg-[#F0CF1F] rounded-md">
     {{ $trigger }}
 
     <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
